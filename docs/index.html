@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Sesion 6</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/night.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/a11y-light.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2 class="titulos" style="font-size:38px"> Viernes de Código </h1>
+					<h2 style="font-size:35px"> Análisis de datos con python </h2>
+					<h2 style="font-size:35px"> Universidad del Norte - Departamento de Economía</h2>
+					<h3 style="font-size:30px"> Jorge Mario Orozco Thomas </h3>
+					<h3 style="font-size:30px"> Sesión 6: Manejo de DataFrames II </h3>
+					<h4 style="font-size:30px"> Abril de 2023 </h4>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h1 style="font-size:60px">Programación</h1>
+					<ul style="list-style-type:'🎮'">
+						<li>Asistencia y registro</li>
+						<li>Agregar nueva columna</li>
+						<li>Operaciones en columnas y filas</li>
+						<li>Ordenar DataFrame</li>
+						<li>Convertir de formato long-wide</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 style="font-size:40px">Asistencia</h2>
+					<a href="https://forms.gle/nfofa9MfNqVz5Vw67" target="_blank">Asistencia</a>
+					<br>
+					<a href="https://github.com/Kin-George/Viernes-de-Codigo" target="_blank">Material</a>
+				</section>
+
+				<section data-auto-animate data-transition="convex">
+					<h2>Agregar columnas</h2>
+					<p style="font-size: 30px; text-align: justify;">En excel es trivial agregar una nueva columna, puesto que la hoja de cálculo viene con dimensiones especificadas y es el usuario quien decide que espacios utilizara. En cambio en Python hay diferentes parametros a considerar para agregar una nueva columna:
+						Dependiendo de nuestra necesidad podemos crear una columna de multiples formas:
+						<pre> <code data-trim data-noescape data-line-numbers="">
+							# Agregar columna
+							"Valor constante" 
+							"Valores de un array" 
+						</code></pre>
+					</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2>Operaciones en columnas y filas</h2>
+					<p style="font-size: 30px; text-align: justify;">
+						Realizar operaciones entre filas o columnas es el tipo de operación mas básico que se puede realizar y python ofrece muchos metodos para esto:
+						Recordemos que las operaciones entre filas y columnas son las mas esenciales.
+					</p>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Ordenar DataFrames</h2>
+					<p style="text-align: justify;">Podemos ordenar el DataFrame de la manera que mas nos convenga:</p>
+				</section>
+
+				<section>
+					<h2 style="font-size: 40px;">Formato Long - Wide</h2>
+					<p style="text-align: justify;">Existen dos tipos de formatos para las bases de datos:</p>
+					<img src="https://qph.cf2.quoracdn.net/main-qimg-dd0dabfa8abd51156906518c0e04f684-pjlq" alt="">
+					<p style="text-align: justify;">Y con python podemos convertir al que mas nos convenga cualquier base de datos utilizando el metodo pivot.</p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
